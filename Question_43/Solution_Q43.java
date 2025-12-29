@@ -28,21 +28,25 @@ public class Solution_Q43 {
                 int d2 = num2.charAt(j) - '0';
                 int posLow = i + j + 1;
                 int posHigh = i + j;
-
                 int sum = d1 * d2 + res[posLow];
                 res[posLow] = sum % 10;
                 res[posHigh] += sum / 10;
             }
         }
 
-        StringBuilder sb = new StringBuilder();
         int k = 0;
         while (k < res.length && res[k] == 0) {
             k++;
         }
-        while (k < res.length) {
-            sb.append(res[k++]);
+
+        char[] out = new char[res.length - k];
+        for (int i = 0; i < out.length; i++) {
+            out[i] = (char) ('0' + res[k + i]);
         }
-        return sb.length() == 0 ? "0" : sb.toString();
+
+        if (out.length == 0) {
+            return "0";
+        }
+        return new String(out);
     }
 }
