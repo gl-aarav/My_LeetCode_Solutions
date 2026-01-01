@@ -1,9 +1,10 @@
 /**
- * This class provides a solution to the problem of removing consecutive anagrams from a list of words.
+ * This class provides a solution to the problem of removing consecutive
+ * anagrams from a list of words.
  *
  * @author Aarav Goyal
  */
-public class SolutionQ2273 {
+public class Solution_Q2273 {
     /**
      * Removes consecutive anagrams from the given list of words.
      *

@@ -5,7 +5,7 @@ package Question_67;
  *
  * @author Aarav Goyal
  */
-public class SolutionQ67 {
+public class Solution_Q67 {
     /**
      * Adds two binary strings and returns their sum as a binary string.
      *

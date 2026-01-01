@@ -1,9 +1,12 @@
+package Question_3;
+
 /**
- * This class provides a solution to the problem of finding the length of the longest substring without repeating characters.
+ * This class provides a solution to the problem of finding the length of the
+ * longest substring without repeating characters.
  *
  * @author Aarav Goyal
  */
-public class SolutionQ3 {
+public class Solution_Q3 {
     /**
      * Finds the length of the longest substring without repeating characters.
      *
@@ -16,18 +19,18 @@ public class SolutionQ3 {
             return 0;
         }
 
-        int[] charCount = new int[128]; 
+        int[] charCount = new int[128];
 
         int maxLength = 0;
         int left = 0;
 
         for (int right = 0; right < n; right++) {
             char currentChar = s.charAt(right);
-            charCount[currentChar]++; 
+            charCount[currentChar]++;
 
             while (charCount[currentChar] > 1) {
                 char leftChar = s.charAt(left);
-                charCount[leftChar]--; 
+                charCount[leftChar]--;
                 left++;
             }
 
