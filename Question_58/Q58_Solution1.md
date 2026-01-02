@@ -1,4 +1,4 @@
-# Question 58: Length of Last Word
+# Question 58: Length of Last Word (Solution 1)
 
 ## Problem Description
 Given a string `s` consisting of words and spaces, return the length of the last word in the string. A word is defined as a maximal substring consisting of non-space characters only.
