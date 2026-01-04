@@ -5,7 +5,7 @@ package Question_50;
  * power n.
  *
  * @author Aarav Goyal
- * @since 01/04/2025
+ * @since 01/04/2026
  */
 public class Solution_Q50 {
     /**
